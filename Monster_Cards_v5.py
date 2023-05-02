@@ -1,5 +1,5 @@
-# Monster Cards V4 - 2/05/23
-# Adds the edit card function so the user can edit values for existing cards
+# Monster Cards V5 - 2/05/23
+# Adds the delete card function so the user can delete existing cards
 
 def print_deck():
 
@@ -87,12 +87,17 @@ def edit_card():
         print(f"{existing_card} successfully updated!")
 
     else:
-        print("This monster does not exist")
+        print("That card does not exist")
 
 
 # Delete card
 def del_card():
-    print("delete card")
+    existing_card = input("\nEnter the name of the card you want to delete: ").title()
+    if existing_card in deck:
+        deck.pop(existing_card)
+        print(f"{existing_card} successfully removed from the deck!")
+    else:
+        print("That card does not exist")
 
 
 # Nested dictionary of all cards in the deck
