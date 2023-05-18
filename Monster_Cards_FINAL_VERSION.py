@@ -1,5 +1,5 @@
-# Monster Cards V6 - 3/05/23
-# Adds the easygui interface to (most of) the program to make it more aesthetically pleasing
+# Monster Cards Final Version - 3/05/23
+
 
 import easygui as gui
 
